@@ -10,7 +10,7 @@ export default function Hero() {
         <Image
           src={BannerImg}
           alt="Banner image"
-          fill
+          fill 
           priority
           className="absolute object-cover object-center [mask-image:linear-gradient(to_bottom,black_55%,transparent_85%)]"
           sizes="100vw"
@@ -22,15 +22,15 @@ export default function Hero() {
               src={tftmLogo}
               alt="TFTM Logo"
               height={130}
-              className="h-[150px] md:h-[200px] lg:h-[250px] xl:h-[300px] w-auto"
+              className="h-[150px] md:h-[180px] w-auto"
             />
           </div>
           <div className="flex flex-col items-center justify-center">
             <div className="text-white -space-y-2 mt-5 drop-shadow-xl z-10">
-              <h2 className="libre-baskerville-regular-italic text-3xl tracking-tight text-center md:text-5xl lg:text-6xl xl:text-7xl">
+              <h2 className="libre-baskerville-regular-italic text-3xl tracking-tight text-center md:text-5xl">
                 T&apos;as faim ?
               </h2>
-              <h1 className="text-5xl font-black tracking-tight text-center md:text-7xl lg:text-8xl xl:text-9xl">
+              <h1 className="text-5xl font-black tracking-tight text-center md:text-7xl">
                 Tu manges!
               </h1>
             </div>
@@ -38,7 +38,7 @@ export default function Hero() {
               src={foodImg}
               alt="Food image"
               height={160}
-              className="relative drop-shadow-lg md:h-[200px] lg:h-[250px] xl:h-[300px] w-auto"
+              className="relative drop-shadow-lg md:h-[200px w-auto"
             />
           </div>
           <a
