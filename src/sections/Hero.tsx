@@ -18,7 +18,12 @@ export default function Hero() {
         {/*Hero content*/}
         <div className="container px-0 mx-auto flex flex-col items-center h-full pt-24 gap-6">
           <div className="relative">
-            <Image src={tftmLogo} alt="TFTM Logo" height={130} className="h-[150px] md:h-[200px] lg:h-[250px] xl:h-[300px] w-auto" />
+            <Image
+              src={tftmLogo}
+              alt="TFTM Logo"
+              height={130}
+              className="h-[150px] md:h-[200px] lg:h-[250px] xl:h-[300px] w-auto"
+            />
           </div>
           <div className="flex flex-col items-center justify-center">
             <div className="text-white -space-y-2 mt-5 drop-shadow-xl z-10">
@@ -36,9 +41,12 @@ export default function Hero() {
               className="relative drop-shadow-lg md:h-[200px] lg:h-[250px] xl:h-[300px] w-auto"
             />
           </div>
-          <button className="relative border border-[#C0A7CC] p-3 rounded-xl bg-gradient-to-b from-[#572D7F] to-[#9D51E5] text-white md:text-xl lg: xl: font-bold shadow-lg before:content-[''] overflow-hidden before:block before:w-40 before:h-3 before:bg-[#F583FF] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-2 before:blur-[10px] mt-5 md:mt-0">
+          <a
+            href="#menus"
+            className="relative border border-[#C0A7CC] p-3 rounded-xl bg-gradient-to-b from-[#572D7F] to-[#9D51E5] text-white md:text-xl lg: xl: font-bold shadow-lg before:content-[''] overflow-hidden before:block before:w-40 before:h-3 before:bg-[#F583FF] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-2 before:blur-[10px] mt-5 md:mt-0"
+          >
             Découvrez nos menus !
-          </button>
+          </a>
         </div>
       </div>
     </section>
