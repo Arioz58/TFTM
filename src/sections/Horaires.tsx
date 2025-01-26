@@ -1,3 +1,3 @@
-export function Horaires{
+export default function Horaires() {
     return null;
-};
+}
