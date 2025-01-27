@@ -5,15 +5,25 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-screen text-[11px] md:text-lg p-6 z-50">
       <div className="flex justify-center items-center bg-white rounded-full py-5 max-w-2xl mx-auto relative shadow-lg">
-        <Image src={tftmLogo} height={80} alt="TFTM Logo" className="hidden md:inline-block absolute -left-5 "/>
+        <Image
+          src={tftmLogo}
+          height={80}
+          alt="TFTM Logo"
+          className="hidden md:inline-block absolute -left-5 "
+        />
         <nav className="flex justify-between max-w-[300px] md:max-w-md w-full text-primary font-black px-2">
           <a href="#menus" className="">
             NOS MENUS
           </a>
-          <a href="#" className="">
+          <a href="#horaires" className="">
             NOS HORAIRES
           </a>
-          <a href="#" className="">
+          <a
+            href="https://www.ubereats.com/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ?diningMode=DELIVERY"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
             COMMANDER
           </a>
         </nav>
