@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "TFTM - The Future of Technology Management",
-  description: "Discover the future of technology management with TFTM",
+  title: "TFTM - T'as faim ? Tu manges!",
+  description: "TFTM - Decouvrez nos menus exceptionnelle et commandez en ligne !",
 };
 
 export default function RootLayout({
@@ -20,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${poppins.variable} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -39,7 +39,9 @@ export default function Footer() {
           Passer commande !
         </a>
         <div className="font-black">
-          <p className="text-base lg:text-xl">© 2025 Tout droits réservé TFTM</p>
+          <p className="text-base lg:text-xl">
+            © 2025 Tout droits réservé TFTM
+          </p>
           <p className="opacity-75">
             Créé par{" "}
             <a href="arzwebconcept.com" className="hover:underline">

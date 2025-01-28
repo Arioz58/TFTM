@@ -10,12 +10,11 @@ export default function Hero() {
         <Image
           src={BannerImg}
           alt="Banner image"
-          fill 
+          fill
           priority
           className="absolute object-cover object-center [mask-image:linear-gradient(to_bottom,black_55%,transparent_85%)]"
           sizes="100vw"
         />
-        {/*Hero content*/}
         <div className="container px-0 mx-auto flex flex-col items-center h-full pt-24 gap-6">
           <div className="relative">
             <Image
