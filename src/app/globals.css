@@ -20,3 +20,13 @@ body {
   font-weight: 400;
   font-style: italic;
 }
+
+.btn-secondary {
+  @apply p-1 bg-white/10 border-[2px] border-primary backdrop-blur-sm rounded-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out;
+}
+
+.btn-secondary:hover Image,
+.btn-secondary:hover img {
+  transition: all 0.3s ease-in-out;
+  filter: brightness(0) invert(1);
+}
