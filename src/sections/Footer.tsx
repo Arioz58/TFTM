@@ -9,13 +9,7 @@ export default function Footer() {
     <footer className="mt-20">
       <div className="flex flex-col justify-center items-center gap-5 w-full bg-secondary text-primary text-center py-4 rounded-t-[50px]">
         <div className="flex flex-col items-center gap-3 lg:flex-row">
-          <Image
-            src={tftmLogo}
-            alt="TFTM Logo"
-            height={70}
-            width={70}
-            
-          />
+          <Image src={tftmLogo} alt="TFTM Logo" height={70} width={70} />
           <div className="z-10 flex flex-col items-center justify-center gap-3 lg:flex-row">
             <a
               href="https://www.instagram.com/tftm_67/"
@@ -43,30 +37,43 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        {/* tous les elts a ajouter sont ici */}
         <div className="flex flex-col gap-18 mt-5 lg:flex-row lg:text-left">
           <div className="">
-            <h2 className="font-black text-xl underline underline-offset-4">NOS PRODUITS</h2>
+            <h2 className="font-black text-xl underline underline-offset-4">
+              NOS PRODUITS
+            </h2>
             <ul className="flex flex-col gap-1 pt-2 font-medium">
-              <a href="">NOS TACOS</a>
-              <a href="">NOS BURGER</a>
-              <a href="">NOS SANDWICH</a>
-              <a href="">AUTRES</a>
+              <a href="/tacos">NOS TACOS</a>
+              <a href="/burger">NOS BURGER</a>
+              <a href="/sandwich">NOS SANDWICH</a>
+              <a href="/autres">AUTRES</a>
             </ul>
           </div>
           <div className="">
-            <h2 className="font-black text-xl underline underline-offset-4">CONTACT</h2>
+            <h2 className="font-black text-xl underline underline-offset-4">
+              CONTACT
+            </h2>
             <ul className="flex flex-col gap-1 pt-2 font-medium">
-              <a href="">Numéro joignable : 06 98 44 67 00</a>
-              <a href="">Adresse : 135 Rte des Romains, 67200 Strasbourg</a>
-              <a href="">Devenir franchisé</a>
+              <a href="tel:+33698446700">Numéro joignable : 06 98 44 67 00</a>
+              <a
+                href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4796b731350790ef:0x4f425dde6dc509a9?sa=X&ved=1t:8290&ictx=111"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Adresse : 135 Rte des Romains, 67200 Strasbourg
+              </a>
+              <a href="/devenir-franchise">Devenir franchisé</a>
             </ul>
           </div>
           <div className="">
-            <h2 className="font-black text-xl underline underline-offset-4">INFORMATIONS LÉGALES</h2>
+            <h2 className="font-black text-xl underline underline-offset-4">
+              INFORMATIONS LÉGALES
+            </h2>
             <ul className="flex flex-col gap-1 pt-2 font-medium">
-              <a href="">Politique de confidentialité</a>
-              <a href="">Mentions légales</a>
+              <a href="/politique-de-confidentialite">
+                Politique de confidentialité
+              </a>
+              <a href="/mentions-legales">Mentions légales</a>
             </ul>
           </div>
         </div>
@@ -92,7 +99,12 @@ export default function Footer() {
           </p>
           <p className="opacity-75 text-sm">
             Créé par{" "}
-            <a href="arzwebconcept.com" className="hover:underline">
+            <a
+              href="https://arzwebconcept.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
               ARZ-Web-Concept
             </a>
           </p>
