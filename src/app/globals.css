@@ -21,12 +21,18 @@ body {
   font-style: italic;
 }
 
+.btn-primary {
+  @apply relative border border-[#C0A7CC] p-3 rounded-xl bg-gradient-to-b from-[#572D7F] to-[#9D51E5] text-white md:text-xl font-black shadow-lg before:content-[''] overflow-hidden before:block before:w-40 before:h-3 before:bg-[#F583FF] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-2 before:blur-[10px] before:transition-all before:duration-300 hover:before:w-48 mt-5 md:mt-0;
+}
+
 .btn-secondary {
-  @apply p-1 bg-white/10 border-[2px] border-primary backdrop-blur-sm rounded-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out;
+  @apply p-1 bg-white/10 border-[2px] border-primary text-primary font-bold backdrop-blur-sm rounded-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out;
 }
 
 .btn-secondary:hover Image,
-.btn-secondary:hover img {
+.btn-secondary:hover img,
+.call:hover img {
   transition: all 0.3s ease-in-out;
   filter: brightness(0) invert(1);
 }
+

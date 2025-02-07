@@ -1,48 +1,96 @@
 import tftmLogo from "@/assets/tftm-logo.png";
 import Image from "next/image";
+import handBag from "@/assets/hand_bag.svg";
+import instaIcon from "@/assets/insta-icon.svg";
+import tiktokIcon from "@/assets/tiktok-icon.svg";
 
 export default function Footer() {
   return (
     <footer className="mt-20">
-      <div className="flex flex-col justify-center items-center gap-5 w-full bg-secondary text-white text-center py-4 rounded-t-[50px]">
-        <Image
-          src={tftmLogo}
-          alt="TFTM Logo"
-          height={130}
-          className="h-[100px] md:h-[150px] w-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
-        />
-        <div className="z-10">
-          <p className="font-black text-lg lg:text-2xl">
-            Numéro joignable :{" "}
-            <a href="tel:+33612345678" className="hover:underline">
-              06 87 65 02 17
-            </a>
-          </p>
-          <p className="font-black text-lg lg:text-2xl">
-            Adresse :{" "}
+      <div className="flex flex-col justify-center items-center gap-5 w-full bg-secondary text-primary text-center py-4 rounded-t-[50px]">
+        <div className="flex flex-col items-center gap-3 lg:flex-row">
+          <Image
+            src={tftmLogo}
+            alt="TFTM Logo"
+            height={70}
+            width={70}
+            
+          />
+          <div className="z-10 flex flex-col items-center justify-center gap-3 lg:flex-row">
             <a
-              href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4796b731350790ef:0x4f425dde6dc509a9?sa=X&ved=1t:8290&ictx=111"
-              className="hover:underline"
+              href="https://www.instagram.com/tftm_67/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              135 Rte des Romains, 67200 Strasbourg
+              <p className="font-black flex items-center justify-center gap-1">
+                <span className="inline-flex">
+                  <Image src={instaIcon} alt="Instagram icon" width={24} />
+                </span>
+                tftm_67
+              </p>
             </a>
-          </p>
+            <a
+              href="https://www.tiktok.com/@tas.faim.tu.manges"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="font-black flex items-center justify-center gap-1">
+                <span>
+                  <Image src={tiktokIcon} alt="TikTok icon" width={20} />
+                </span>
+                tas.faim.tu.manges
+              </p>
+            </a>
+          </div>
+        </div>
+        {/* tous les elts a ajouter sont ici */}
+        <div className="flex flex-col gap-18 mt-5 lg:flex-row lg:text-left">
+          <div className="">
+            <h2 className="font-black text-xl underline underline-offset-4">NOS PRODUITS</h2>
+            <ul className="flex flex-col gap-1 pt-2 font-medium">
+              <a href="">NOS TACOS</a>
+              <a href="">NOS BURGER</a>
+              <a href="">NOS SANDWICH</a>
+              <a href="">AUTRES</a>
+            </ul>
+          </div>
+          <div className="">
+            <h2 className="font-black text-xl underline underline-offset-4">CONTACT</h2>
+            <ul className="flex flex-col gap-1 pt-2 font-medium">
+              <a href="">Numéro joignable : 06 98 44 67 00</a>
+              <a href="">Adresse : 135 Rte des Romains, 67200 Strasbourg</a>
+              <a href="">Devenir franchisé</a>
+            </ul>
+          </div>
+          <div className="">
+            <h2 className="font-black text-xl underline underline-offset-4">INFORMATIONS LÉGALES</h2>
+            <ul className="flex flex-col gap-1 pt-2 font-medium">
+              <a href="">Politique de confidentialité</a>
+              <a href="">Mentions légales</a>
+            </ul>
+          </div>
         </div>
         <a
           href="https://www.ubereats.com/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ?diningMode=DELIVERY"
           target="_blank"
           rel="noopener noreferrer"
-          className="relative inline-block border border-[#C0A7CC] p-3 rounded-xl bg-gradient-to-b from-[#572D7F] to-[#9D51E5] text-white md:text-xl lg: xl: font-bold shadow-lg before:content-[''] overflow-hidden before:block before:w-40 before:h-3 before:bg-[#F583FF] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-2 before:blur-[10px] before:transition-all before:duration-300 hover:before:w-48 mt-5 md:mt-0"
+          className="btn-primary flex items-center justify-center gap-1"
         >
-          Passer commande !
+          Passer commande{" "}
+          <span className="inline-flex">
+            <Image
+              src={handBag}
+              alt="hand bag icon"
+              width={16}
+              className="brightness-0 invert"
+            />
+          </span>
         </a>
         <div className="font-black">
           <p className="text-base lg:text-xl">
             © 2025 Tout droits réservé TFTM
           </p>
-          <p className="opacity-75">
+          <p className="opacity-75 text-sm">
             Créé par{" "}
             <a href="arzwebconcept.com" className="hover:underline">
               ARZ-Web-Concept
