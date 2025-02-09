@@ -49,18 +49,18 @@ export default function Footer() {
               <a href="/autres">AUTRES</a>
             </ul>
           </div>
-          <div className="">
+          <div className="px-2">
             <h2 className="font-black text-xl underline underline-offset-4">
               CONTACT
             </h2>
             <ul className="flex flex-col gap-1 pt-2 font-medium">
-              <a href="tel:+33698446700">Numéro joignable : 06 98 44 67 00</a>
+              <a href="tel:+33698446700">Numéro joignable : <span className="underline"> 06 98 44 67 00</span></a>
               <a
                 href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4796b731350790ef:0x4f425dde6dc509a9?sa=X&ved=1t:8290&ictx=111"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Adresse : 135 Rte des Romains, 67200 Strasbourg
+                Adresse : <span className="underline">135 Rte des Romains, 67200 Strasbourg</span>
               </a>
               <a href="/devenir-franchise">Devenir franchisé</a>
             </ul>
