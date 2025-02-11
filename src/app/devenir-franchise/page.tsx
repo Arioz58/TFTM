@@ -32,7 +32,9 @@ export default function Franchise() {
       } else {
         setSubmitStatus("error");
       }
-    } catch (_error) {
+    } catch (error: unknown) {
+      // Log the error for debugging
+      console.error('Client error:', error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
