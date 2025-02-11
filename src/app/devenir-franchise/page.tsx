@@ -1,7 +1,44 @@
+"use client";
+import { FormEvent, useState } from "react";
 import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 
 export default function Franchise() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(
+    null
+  );
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        e.currentTarget.reset();
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -36,17 +73,17 @@ export default function Franchise() {
                 </p>
               </div>
             </div>
-            <form action="" className=" ">
+            <form onSubmit={handleSubmit} className=" ">
               <h1 className="font-black text-center text-xl mb-5 md:text-3xl text-white">
                 Informations personnelles
               </h1>
               <div className="flex flex-col gap-5">
                 {/* Civilité */}
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="situation">Civilité *</label>
+                  <label htmlFor="civilite">Civilité *</label>
                   <select
-                    name="situation"
-                    id="situation"
+                    name="civilite"
+                    id="civilite"
                     required
                     defaultValue=""
                     className="p-2 border border-white/50 rounded-xl text-black"
@@ -95,13 +132,13 @@ export default function Franchise() {
                   />
                 </div>
 
-                {/* situation */}
+                {/* adresse */}
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="situation">situation *</label>
+                  <label htmlFor="adresse">Adresse *</label>
                   <input
                     type="text"
-                    name="situation"
-                    id="situation"
+                    name="adresse"
+                    id="adresse"
                     placeholder="Numéro et nom de rue"
                     required
                     className="p-2 border border-white/50 rounded-xl text-black"
@@ -300,17 +337,32 @@ export default function Franchise() {
                     className="mt-1"
                   />
                   <label htmlFor="rgpd" className="text-sm">
-                    J&apos;accepte que mes informations soient enregistrées dans le
-                    cadre de ma demande de franchise. Ces informations resteront
-                    strictement confidentielles conformément à notre politique
-                    de confidentialité. *
+                    J&apos;accepte que mes informations soient enregistrées dans
+                    le cadre de ma demande de franchise. Ces informations
+                    resteront strictement confidentielles conformément à notre
+                    politique de confidentialité. *
                   </label>
                 </div>
 
+                {submitStatus === "success" && (
+                  <div className="text-green-500 text-center p-4">
+                    Votre demande a été envoyée avec succès !
+                  </div>
+                )}
+                {submitStatus === "error" && (
+                  <div className="text-green-500 text-center p-4">
+                    Votre demande a été envoyée avec succès !
+                  </div>
+                )}
+
                 {/* Submit Button */}
 
-                <button type="submit" className="btn-primary ">
-                  Envoyer
+                <button
+                  type="submit"
+                  className="btn-primary disabled:opacity-50"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Envoi en cours..." : "Envoyer"}
                 </button>
               </div>
             </form>
