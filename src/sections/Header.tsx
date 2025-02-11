@@ -98,7 +98,7 @@ export default function Header() {
         </Link>
         <nav className="flex justify-between max-w-[300px] md:max-w-md w-full text-primary font-black px-2">
           <div className="group">
-            <a  className=" flex items-center gap-1">
+            <a href="/nos-menus" className=" flex items-center gap-1">
               NOS MENUS
               <span className="inline-flex">
                 <svg xmlns="http://www.w3.org/</span>2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
