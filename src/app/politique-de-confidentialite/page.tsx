@@ -7,11 +7,11 @@ export default function Politique() {
     <>
       <Header />
       <div className="text-primary">
-        <h1 className="relative text-lg font-black text-center pt-28 pb-5 bg-secondary rounded-b-3xl border-[2px] border-white/50 shadow-xl -top-2 lg:text-3xl max-w-xl mx-auto">
+        <h1 className="relative text-lg font-black text-center pt-28 pb-5 bg-secondary rounded-b-3xl border-[2px] border-white/50 shadow-xl -top-2 md:text-3xl max-w-xl mx-auto">
           POLITIQUE DE CONFIDENTIALITÉ
         </h1>
         <div className="flex flex-col items-center mt-5">
-          <div className="text-white flex flex-col gap-6 max-w-3xl px-4">
+          <div className="text-white flex flex-col gap-10 max-w-3xl px-4 lg:text-lg">
             <div className="">
               <h1 className="text-lg font-black">Votre importance pour nous</h1>
               <p>

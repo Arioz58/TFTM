@@ -89,15 +89,16 @@ export default function Header() {
     ) : (
       <header className="fixed top-0 w-screen text-[11px] md:text-lg p-6 z-50">
       <div className="flex justify-center items-center bg-white rounded-full py-5 max-w-2xl mx-auto relative shadow-lg">
-        <Image
-          src={tftmLogo}
-          height={80}
-          alt="TFTM Logo"
-          className="hidden md:inline-block absolute -left-5 "
-        />
+        <Link href="/" className="hidden md:inline-block absolute -left-5 ">
+          <Image
+            src={tftmLogo}
+            height={80}
+            alt="TFTM Logo"
+          />
+        </Link>
         <nav className="flex justify-between max-w-[300px] md:max-w-md w-full text-primary font-black px-2">
           <div className="group">
-            <a href="#menus" className=" flex items-center gap-1">
+            <a  className=" flex items-center gap-1">
               NOS MENUS
               <span className="inline-flex">
                 <svg xmlns="http://www.w3.org/</span>2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">

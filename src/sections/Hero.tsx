@@ -133,7 +133,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20, scale: 0 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ type: "spring", stiffness: 400, damping: 25 }}
-              href="tel:+33698446700"
+              href="tel:+33987650217"
               className="call p-3 bg-white/10 border-[2px] border-primary text-primary font-bold backdrop-blur-sm rounded-xl hover:bg-primary hover:text-white transition-all duration-300 ease-in-out flex items-center justify-center gap-1"
             >
               Appelez nous{" "}
