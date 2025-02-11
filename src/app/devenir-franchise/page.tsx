@@ -32,7 +32,7 @@ export default function Franchise() {
       } else {
         setSubmitStatus("error");
       }
-    } catch (error) {
+    } catch (_error) {
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
