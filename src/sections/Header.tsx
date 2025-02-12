@@ -32,7 +32,7 @@ export default function Header() {
   return (
     isMobile ? (
     <header className="fixed top-0 left-1/2 -translate-x-1/2 w-screen max-w-xs z-50">
-      <div className="bg-white mx-10 my-5 p-4 rounded-[40px]">
+      <div className="bg-white mx-10 my-5 p-4 rounded-[40px] shadow-2xl">
         <nav className="flex justify-between items-center">
           <a
             href="https://www.ubereats.com/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ?diningMode=DELIVERY"

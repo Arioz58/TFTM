@@ -12,15 +12,7 @@ export default function Horaires() {
           </h1>
           <div className="flex flex-col items-center">
             <h2 className="font-black text-center text-white mb-5">
-              Du Lundi au Jeudi + Samedi
-            </h2>
-            <Image src={HeurMatin} alt="Horaires du matin" />
-            <span className="font-black text-center text-white">et</span>
-            <Image src={HeurSoir} alt="Horaires du soir" />
-          </div>
-          <div className="flex flex-col items-center mt-10">
-            <h2 className="font-black text-center text-white mb-5">
-              Vendredi et Dimanche
+              Toute la semaine de :
             </h2>
             <Image src={HeurSoir} alt="Horaires du soir" />
           </div>

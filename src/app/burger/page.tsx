@@ -80,7 +80,7 @@ export default function Burger() {
           <p className="font-bold text-white/80 text-center">
             Chacun de nos produits ont une formule boisson + frites a 2,90€
           </p>
-          <div className="grid grid-cols-1 gap-4 px-4 py-4 max-w-xs md:grid-cols-2 md:max-w-xl lg:grid-cols-4 lg:max-w-7xl ">
+          <div className="grid grid-cols-1 gap-4 px-4 py-4 max-w-xs md:grid-cols-2 md:max-w-xl lg:grid-cols-3 lg:max-w-5xl ">
             {burgers.map((burger) => (
               <div
                 key={burger.name}
