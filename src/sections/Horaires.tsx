@@ -1,4 +1,3 @@
-import HeurMatin from "@/assets/11-30_14-30.png";
 import HeurSoir from "@/assets/18-00_01-30.png";
 import Image from "next/image";
 
