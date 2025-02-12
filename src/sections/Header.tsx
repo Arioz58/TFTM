@@ -17,7 +17,7 @@ export default function Header() {
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth <= 768);
-    }
+    };
 
     checkIsMobile();
 
@@ -25,12 +25,10 @@ export default function Header() {
 
     return () => {
       window.removeEventListener("resize", checkIsMobile);
-    }
-
+    };
   }, []);
 
-  return (
-    isMobile ? (
+  return isMobile ? (
     <header className="fixed top-0 left-1/2 -translate-x-1/2 w-screen max-w-xs z-50">
       <div className="bg-white mx-10 my-5 p-4 rounded-[40px] shadow-2xl">
         <nav className="flex justify-between items-center">
@@ -86,38 +84,72 @@ export default function Header() {
         </AnimatePresence>
       </div>
     </header>
-    ) : (
-      <header className="fixed top-0 w-screen text-[11px] md:text-lg p-6 z-50">
+  ) : (
+    <header className="fixed top-0 w-screen text-[11px] md:text-lg p-6 z-50">
       <div className="flex justify-center items-center bg-white rounded-full py-5 max-w-2xl mx-auto relative shadow-lg">
         <Link href="/" className="hidden md:inline-block absolute -left-5 ">
-          <Image
-            src={tftmLogo}
-            height={80}
-            alt="TFTM Logo"
-          />
+          <Image src={tftmLogo} height={80} alt="TFTM Logo" />
         </Link>
         <nav className="flex justify-between max-w-[300px] md:max-w-md w-full text-primary font-black px-2">
           <div className="group">
             <a href="/nos-menus" className=" flex items-center gap-1">
               NOS MENUS
               <span className="inline-flex">
-                <svg xmlns="http://www.w3.org/</span>2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M6 9l6 6 6-6"/>
+                <svg
+                  xmlns="http://www.w3.org/</span>2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M6 9l6 6 6-6" />
                 </svg>
               </span>
             </a>
             <div className="hidden group-hover:block animate-[fadeIn_0.2s_ease-in-out] absolute top-10 w-40 bg-white rounded-lg shadow-lg pt-4 text-sm font-bold text-center">
-                <ul className="py-2">
-                  <li><a href="/tacos" className="block px-4 py-2 text-primary hover:bg-gray-100">NOS TACOS</a></li>
-                  <li><a href="/burger" className="block px-4 py-2 text-primary hover:bg-gray-100">NOS BURGER</a></li>
-                  <li><a href="/sandwich" className="block px-4 py-2 text-primary hover:bg-gray-100">NOS SANDWICH</a></li>
-                  <li><a href="/autres" className="block px-4 py-2 text-primary hover:bg-gray-100">AUTRES</a></li>
-                </ul>
-              </div>
+              <ul className="py-2">
+                <li>
+                  <a
+                    href="/tacos"
+                    className="block px-4 py-2 text-primary hover:bg-gray-100"
+                  >
+                    NOS TACOS
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/burger"
+                    className="block px-4 py-2 text-primary hover:bg-gray-100"
+                  >
+                    NOS BURGER
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/sandwich"
+                    className="block px-4 py-2 text-primary hover:bg-gray-100"
+                  >
+                    NOS SANDWICH
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/autres"
+                    className="block px-4 py-2 text-primary hover:bg-gray-100"
+                  >
+                    AUTRES
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <a href="#horaires" className="">
+          <Link href="/#horaires" className="">
             NOS HORAIRES
-          </a>
+          </Link>
           <a
             href="https://www.ubereats.com/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ?diningMode=DELIVERY"
             target="_blank"
@@ -129,6 +161,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-    )
   );
 }
