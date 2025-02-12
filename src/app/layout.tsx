@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -10,7 +11,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "TFTM - T'as faim ? Tu manges!",
-  description: "TFTM - Decouvrez nos menus exceptionnelle et commandez en ligne !",
+  description:
+    "TFTM - Decouvrez nos menus exceptionnelle et commandez en ligne !",
 };
 
 export default function RootLayout({
@@ -21,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>{children}</body>
+      <Analytics />
     </html>
   );
 }
