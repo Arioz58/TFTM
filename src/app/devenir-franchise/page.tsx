@@ -1,5 +1,5 @@
 "use client";
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useRef } from "react";
 import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 
@@ -8,6 +8,7 @@ export default function Franchise() {
   const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(
     null
   );
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,13 +29,12 @@ export default function Franchise() {
 
       if (response.ok) {
         setSubmitStatus("success");
-        e.currentTarget.reset();
+        formRef.current?.reset();
       } else {
         setSubmitStatus("error");
       }
-    } catch (error: unknown) {
-      // Log the error for debugging
-      console.error('Client error:', error);
+    } catch (error) {
+      console.error("Client error:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -75,7 +75,7 @@ export default function Franchise() {
                 </p>
               </div>
             </div>
-            <form onSubmit={handleSubmit} className=" ">
+            <form ref={formRef} onSubmit={handleSubmit} className=" ">
               <h1 className="font-black text-center text-xl mb-5 md:text-3xl text-white">
                 Informations personnelles
               </h1>

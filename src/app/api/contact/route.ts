@@ -1,46 +1,37 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-// Define the form data interface
-interface FormData {
-  civilite: string;
-  nom: string;
-  prenom: string;
-  dateNaissance: string;
-  adresse: string;
-  ville: string;
-  codePostal: string;
-  telephone: string;
-  email: string;
-  situation?: string;
-  investissement: string;
-  zone: string;
-  superficie: string;
-  adresseLocal?: string;
-  description: string;
-}
-
 export async function POST(req: Request) {
   try {
-    const formData: FormData = await req.json();
+    // Log request received
+    console.log('API route hit');
 
-    // Change this part
+    const formData = await req.json();
+    console.log('Form data received:', { ...formData, email: '[REDACTED]' });
+
+    // Verify environment variable
+    if (!process.env.EMAIL_PASSWORD) {
+      throw new Error('EMAIL_PASSWORD environment variable is not set');
+    }
+
     const transportConfig = {
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
+      service: 'gmail', // Use service instead of host/port
       auth: {
         user: "lolman004400@gmail.com",
         pass: process.env.EMAIL_PASSWORD,
       },
-    } as nodemailer.TransportOptions;
+    };
 
     const transporter = nodemailer.createTransport(transportConfig);
 
-    // Verify SMTP connection
-    await transporter.verify().catch((error) => {
-      throw new Error(`SMTP verification failed: ${error.message}`);
-    });
+    // Test connection
+    try {
+      await transporter.verify();
+      console.log('SMTP connection verified');
+    } catch (verifyError) {
+      console.error('SMTP verification failed:', verifyError);
+      throw verifyError;
+    }
 
     const mailOptions = {
       from: "lolman004400@gmail.com",
@@ -79,18 +70,29 @@ export async function POST(req: Request) {
       `,
     };
 
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent:', info.messageId);
 
     return NextResponse.json({
       success: true,
       message: "Email sent successfully",
+      messageId: info.messageId
     });
+
   } catch (error: unknown) {
-    const errorMessage =
-      error instanceof Error ? error.message : "Unknown error occurred";
-    console.error("Error sending email:", errorMessage);
+    const errorMessage = error instanceof Error ? error.message : "Unknown error occurred";
+    console.error("Detailed error:", {
+      message: errorMessage,
+      stack: error instanceof Error ? error.stack : undefined,
+      type: error instanceof Error ? error.name : typeof error
+    });
+    
     return NextResponse.json(
-      { error: "Error sending email", details: errorMessage },
+      { 
+        error: "Error sending email", 
+        details: errorMessage,
+        type: error instanceof Error ? error.name : typeof error
+      },
       { status: 500 }
     );
   }
