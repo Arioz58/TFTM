@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     const transportConfig = {
       service: 'gmail', // Use service instead of host/port
       auth: {
-        user: "lolman004400@gmail.com",
+        user: "arz.notify@gmail.com",
         pass: process.env.EMAIL_PASSWORD,
       },
     };
@@ -34,8 +34,8 @@ export async function POST(req: Request) {
     }
 
     const mailOptions = {
-      from: "lolman004400@gmail.com",
-      to: "lolman004400@gmail.com",
+      from: "arz.notify@gmail.com",
+      to: "Tftm67@outlook.com",
       subject: "Nouvelle demande de franchise TFTM",
       html: `
         <h1>Nouvelle demande de franchise</h1>
