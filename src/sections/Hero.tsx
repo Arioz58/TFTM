@@ -114,7 +114,7 @@ export default function Hero() {
                 damping: 25,
                 delay: 0.2,
               }}
-              href="https://www.ubereats.com/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ?diningMode=DELIVERY"
+              href="https://www.order.store/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary flex items-center justify-center gap-1"

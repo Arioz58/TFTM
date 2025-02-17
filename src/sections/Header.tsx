@@ -33,7 +33,7 @@ export default function Header() {
       <div className="bg-white mx-10 my-5 p-4 rounded-[40px] shadow-2xl">
         <nav className="flex justify-between items-center">
           <a
-            href="https://www.ubereats.com/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ?diningMode=DELIVERY"
+            href="https://www.order.store/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary text-primary text-xs font-black flex flex-row items-center justify-center gap-2"
@@ -151,7 +151,7 @@ export default function Header() {
             NOS HORAIRES
           </Link>
           <a
-            href="https://www.ubereats.com/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ?diningMode=DELIVERY"
+            href="https://www.order.store/store/tas-faim-tu-manges/4jW95WbNUpuREgH7Tr2oPQ"
             target="_blank"
             rel="noopener noreferrer"
             className=""
