@@ -19,10 +19,10 @@ export default function Horaires() {
           </h1>
           <div className="flex flex-col items-center">
             <h2 className="font-black text-center md:text-2xl text-white mb-5">
-              Mardi : fermé ❌
+              Mardi : Fermé ❌
             </h2>
             <h2 className="font-black text-center md:text-2xl text-white mb-5">
-              Du mercredi au lundi de:
+              Du mercredi au lundi de :
             </h2>
             <Image src={HeurSoir} alt="Horaires du soir" />
           </div>
