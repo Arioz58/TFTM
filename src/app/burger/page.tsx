@@ -5,7 +5,6 @@ import burgerAllStar from "@/assets/burgers/burger-All-star.png";
 import burgerBigDunk from "@/assets/burgers/burger-big-dunk.png";
 import burgerBreakChicken from "@/assets/burgers/burger-break-chicken.png";
 import burgerCheese from "@/assets/burgers/burger-cheese.png";
-import burgerKingJames from "@/assets/burgers/burger-king-jmaes.png";
 import burgerMoneyTime from "@/assets/burgers/burger-money-time.png";
 import burgerSwishChicken from "@/assets/burgers/burger-swish-chicken.png";
 import Image from "next/image";
@@ -44,14 +43,6 @@ const burgers = [
     description: "steak 450g, cheddar, cornichons, kechup, moutarde.",
     price: 3.5,
     image: burgerCheese,
-  },
-  {
-    name: "King James",
-    signature: true,
-    description:
-      "escalope de poulet, salade, tomate, oignon rouge, oeuf, double cheddar, sauce King.",
-    price: 8.9,
-    image: burgerKingJames,
   },
   {
     name: "Money Time",
