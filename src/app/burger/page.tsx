@@ -7,6 +7,7 @@ import burgerBreakChicken from "@/assets/burgers/burger-break-chicken.png";
 import burgerCheese from "@/assets/burgers/burger-cheese.png";
 import burgerMoneyTime from "@/assets/burgers/burger-money-time.png";
 import burgerSwishChicken from "@/assets/burgers/burger-swish-chicken.png";
+import burgerFish from "@/assets/burgers/burger-fish.png";
 import Image from "next/image";
 
 const burgers = [
@@ -56,6 +57,12 @@ const burgers = [
     description: "poulet pané, galatte P.D.T, cheddar, salade, sauce Swish.",
     price: 6.9,
     image: burgerSwishChicken,
+  },
+  {
+    name: "Burger Fish",
+    description: "Sauce fish, Salade, Fish.",
+    price: 5.9,
+    image:  burgerFish,
   },
 ];
 
