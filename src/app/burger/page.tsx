@@ -106,13 +106,13 @@ export default function Burger() {
                   <p className="text-xl text-left font-semibold text-white/80">
                     {burger.price}€
                   </p>
-                  {burger.signature && (
+                  {/*burger.signature && (
                     <div className="absolute top-0 right-0 p-2 bg-secondary rounded-bl-3xl">
                       <p className="text-sm font-black text-primary">
                         Signature
                       </p>
                     </div>
-                  )}
+                  )*/}
                 </div>
               </div>
             ))}
