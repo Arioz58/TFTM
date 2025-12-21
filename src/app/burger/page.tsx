@@ -1,7 +1,6 @@
 import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 import burger3points from "@/assets/burgers/burger-3-points.png";
-import burgerAllStar from "@/assets/burgers/burger-All-star.png";
 import burgerBigDunk from "@/assets/burgers/burger-big-dunk.png";
 import burgerBreakChicken from "@/assets/burgers/burger-break-chicken.png";
 import burgerCheese from "@/assets/burgers/burger-cheese.png";
