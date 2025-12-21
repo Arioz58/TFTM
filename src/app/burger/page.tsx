@@ -8,6 +8,8 @@ import burgerCheese from "@/assets/burgers/burger-cheese.png";
 import burgerMoneyTime from "@/assets/burgers/burger-money-time.png";
 import burgerSwishChicken from "@/assets/burgers/burger-swish-chicken.png";
 import burgerFish from "@/assets/burgers/burger-fish.png";
+import burgerMagicMike from "@/assets/burgers/burger-le-magic-mike.png"
+import burgerSpicy from "@/assets/burgers/burger-le-spicy.png"
 import Image from "next/image";
 
 const burgers = [
@@ -17,14 +19,6 @@ const burgers = [
       "3 steaks 45g, triple cheddar, salade, oignon, sauce 3 Points.",
     price: 6.9,
     image: burger3points,
-  },
-  {
-    name: "All Star",
-    signature: true,
-    description:
-      "steak frais 110g, salade, tomate, oignon rouge, bacon, cheddar, sauce Star.",
-    price: 8.9,
-    image: burgerAllStar,
   },
   {
     name: "Big Dunk",
@@ -64,6 +58,18 @@ const burgers = [
     price: 5.9,
     image:  burgerFish,
   },
+  {
+    name: "Le Magic Mike",
+    description: "2 steaks, cheddar, cornichons, salade, oignions, sauce magic.",
+    price: 7.5,
+    image:  burgerMagicMike,
+  },
+  {
+    name: "Le Spicy",
+    description: "2 steaks 45GR, double cheddar, salade, oignons crispy, sauce spicy.",
+    price: 5.9,
+    image:  burgerSpicy,
+  }
 ];
 
 export default function Burger() {
