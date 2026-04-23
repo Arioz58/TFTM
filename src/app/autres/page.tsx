@@ -8,7 +8,6 @@ import hotDog1 from "@/assets/autres/dogi-dog.png";
 import hotDog2 from "@/assets/autres/hot-dog.png";
 import kidMenu1 from "@/assets/autres/menu-kids-cheese.png";
 import kidMenu2 from "@/assets/autres/menu-kids-nuggets.png";
-import { image } from "framer-motion/client";
 
 const texmex = [
   {
