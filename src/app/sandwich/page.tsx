@@ -11,14 +11,14 @@ const sandwichs = [
     name: "Johnson 32",
     description:
       "escalope de poulet, kefta, salade, tomate, oignons grillé, poivron grillé, cheddar, sauce Johnson.",
-    price: 7.5,
+    price: 7.9,
     image: sandJhonson,
   },
   {
     name: "Jordan 23",
     description:
       "escalope de poulet, salade, tomate, oignons grillé, cheddar, sauce Jordan.",
-    price: 7.5,
+    price: 7.9,
     image: sandJordan,
   },
   {
@@ -30,7 +30,7 @@ const sandwichs = [
   {
     name: "West 44",
     description: "Kefta, oeuf, salade, tomate, cheddar, sauce West.",
-    price: 7.5,
+    price: 7.9,
     image: sandWest,
   },
 ];

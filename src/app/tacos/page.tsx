@@ -11,7 +11,7 @@ const tacos = [
   {
     name: "Boston",
     description: "cordon bleu, tenders, fries, cheddar, oignons, sauce Boston.",
-    price: 7.5,
+    price: 7.9,
     image: tacosBoston,
   },
   {
@@ -31,13 +31,13 @@ const tacos = [
   {
     name: "Lakers",
     description: "escalope de poulet, tenders, frites, gruyère, sauce Lakers.",
-    price: 7.5,
+    price: 7.9,
     image: tacosLakers,
   },
   {
     name: "Orlando",
     description: "escalope de poulet, frites, cheddar, gruyère, sauce Orlando.",
-    price: 7.5,
+    price: 7.9,
     image: tacosOrlando,
   },
 ];

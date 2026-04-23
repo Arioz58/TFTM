@@ -23,13 +23,13 @@ const burgers = [
     name: "Big Dunk",
     description:
       "steak 90g, galette P.D.T, double cheddar, salade, oignon, sauce Dunk.",
-    price: 6.5,
+    price: 6.9,
     image: burgerBigDunk,
   },
   {
     name: "Break Chicken",
     description: "poulet pané, cheddar, salade, sauce Break.",
-    price: 6.5,
+    price: 6.9,
     image: burgerBreakChicken,
   },
   {
@@ -48,7 +48,7 @@ const burgers = [
   {
     name: "Swish Chicken",
     description: "poulet pané, galatte P.D.T, cheddar, salade, sauce Swish.",
-    price: 6.9,
+    price: 7.9,
     image: burgerSwishChicken,
   },
   {
@@ -60,7 +60,7 @@ const burgers = [
   {
     name: "Le Magic Mike",
     description: "2 steaks, cheddar, cornichons, salade, oignions, sauce magic.",
-    price: 7.5,
+    price: 6.9,
     image:  burgerMagicMike,
   },
   {

@@ -25,9 +25,14 @@ const texmex = [
   {
     name: "Tenders",
     description: "3 pièces.",
-    price: 5.5,
+    price: 5.9,
     image: texmexTenders,
   },
+  {
+    name: "Chicken Wings",
+    description : "3 pièces.",
+    price: 5.50,
+  }
 ];
 
 const hotDogs = [
@@ -40,7 +45,7 @@ const hotDogs = [
   {
     name: "Hot-Dog",
     description: "Ketchup, moutarde, oignon crispy.",
-    price: 4.5,
+    price: 4.8,
     image: hotDog2,
   },
 ];
