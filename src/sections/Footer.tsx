@@ -54,7 +54,7 @@ export default function Footer() {
               CONTACT
             </h2>
             <ul className="flex flex-col gap-1 pt-2 font-medium">
-              <a href="tel:+33698446700">Numéro joignable : <span className="underline"> 06 98 44 67 00</span></a>
+              <a href="tel:+33388122708">Numéro joignable : <span className="underline"> 03 88 12 27 08</span></a>
               <a
                 href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4796b731350790ef:0x4f425dde6dc509a9?sa=X&ved=1t:8290&ictx=111"
                 target="_blank"

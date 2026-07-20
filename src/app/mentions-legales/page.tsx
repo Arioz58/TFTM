@@ -35,7 +35,7 @@ export default function Mentions() {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+33782851977">Téléphone : 07 82 85 19 77</a>
+                  <a href="tel:+33388122708">Téléphone : 03 88 12 27 08</a>
                 </li>
                 <li>
                   <a href="mailto:arzwebconcept@gmail.com">
@@ -119,7 +119,7 @@ export default function Mentions() {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+33698446700">06 98 44 67 00</a>
+                  <a href="tel:+33388122708">03 88 12 27 08</a>
                 </li>
               </ul>
             </div>
